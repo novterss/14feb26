@@ -31,7 +31,7 @@ Building this project for her helped me understand:
 
 ## 🚀 How to View
 You can view the live surprise here:
-👉 **[https://14feb26-nine.vercel.app//Live Link Here]**
+👉 **[https://14feb26-nine.vercel.app/Live Link Here]**
 
 ---
 *Made with ❤️ for Mornor | 14 Feb 2026*
