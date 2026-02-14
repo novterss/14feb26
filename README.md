@@ -1,6 +1,6 @@
 # 💖 Inseparable ∞ - Valentine's Surprise Project
 
-**Live Demo:** [👉 Click Here to Visit](https://novterss.github.io/14feb26/) *(Don't forget to update this link if you use Vercel!)*
+**Live Demo:** [👉 Click Here to Visit](https://14feb26-nine.vercel.app/) *(Don't forget to update this link if you use Vercel!)*
 
 ## 🎀 Project Overview
 This is a special surprise website I built from scratch for **Mornor's Valentine's Day**! 🚀  
@@ -31,7 +31,7 @@ Building this project for her helped me understand:
 
 ## 🚀 How to View
 You can view the live surprise here:
-👉 **[Insert Vercel/Live Link Here]**
+👉 **[https://14feb26-nine.vercel.app//Live Link Here]**
 
 ---
 *Made with ❤️ for Mornor | 14 Feb 2026*
