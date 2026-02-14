@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inseparable ∞ - Mornor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="locked">
+    <!-- Scrolling Background Lyrics -->
+    <div class="lyrics-background">
+        <div class="lyrics-wrapper" id="lyrics-track">
+            <!-- Lyrics will be injected here via JS -->
+        </div>
+    </div>
+
+    <!-- 1. Passcode Overlay -->
+    <div id="passcode-overlay" class="overlay">
+        <div class="keypad-container">
+            <h2 class="keypad-title">Enter Passcode ❤️</h2>
+            <div id="passcode-display" class="passcode-dots">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="keypad">
+                <button class="key" data-key="1">1</button>
+                <button class="key" data-key="2">2</button>
+                <button class="key" data-key="3">3</button>
+                <button class="key" data-key="4">4</button>
+                <button class="key" data-key="5">5</button>
+                <button class="key" data-key="6">6</button>
+                <button class="key" data-key="7">7</button>
+                <button class="key" data-key="8">8</button>
+                <button class="key" data-key="9">9</button>
+                <button class="key empty-key"></button>
+                <button class="key" data-key="0">0</button>
+                <button class="key delete-key" id="delete-btn">⌫</button>
+            </div>
+            <p id="error-msg" class="error-text hidden">รหัสไม่ถูกต้อง ลองใหม่อีกครั้งนะคนดี</p>
+        </div>
+    </div>
+
+    <!-- 2. Quiz Overlay (Hidden) -->
+    <div id="quiz-overlay" class="overlay hidden">
+        <div class="quiz-container">
+            <h2 class="quiz-title">Verification Quiz</h2>
+            <div id="quiz-step" class="quiz-content">
+                <!-- Question injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Main Content (Hidden initially) -->
+    <div id="main-content" class="hidden-content">
+        <div id="heart-container"></div>
+
+        <div class="sound-control">
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+            <button id="sound-toggle" class="sound-btn">
+                <span id="sound-icon">🔈</span>
+            </button>
+        </div>
+
+        <main class="container">
+            <!-- Relationship Dashboard -->
+            <section class="dashboard card anim-fade">
+                <h1 class="title">Relationship Dashboard</h1>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <label>วันที่คบกันมา (ตั้งแต่วันที่ 08/09/24)</label>
+                        <div id="uptime-display" class="stat-value">-- : -- : -- : --</div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-item">
+                        <label>Happiness Level</label>
+                        <div class="gauge">
+                            <div class="gauge-fill" style="width: 100%;"></div>
+                            <span>OFF THE CHARTS 📈</span>
+                        </div>
+                    </div>
+                    <div class="chart-item">
+                        <label>ค่าความคิดถึง</label>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                            <span>100% (Thinking of you always)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Heartfelt Message -->
+            <section class="message card anim-slide-up">
+                <h2 class="recipient">To: <span class="name">mornor</span></h2>
+                <p class="heartfelt-text">
+                    เค้าไม่รู้จะพูดยังไงแต่การที่อยู่ด้วยกันทุกวันนี้เค้าก็มีความสุุขมากๆแล้วอยู่ด้วยกันทุกวันนี้ไปนานๆนะ
+                    ขอโทษทุกๆอย่างที่เคยทำตัวไม่ดี และ ทุกวันนี้ก็มีแค่เธอและจะตั้งใจทำอนาคตให้ดีเพื่อเธอนนะ
+                    บางครั้งอาจจะทำตัวน่าเบื่อหรือยังไงแต่ก็ขอบคุณที่ไม่เคยเบื่อกันแล้วเค้าก็ไม่เคยเบื่อเธอเลยสักครั้ง
+                    เค้ารักเธอมากๆนะมากที่สุดในโลกแล้ว จะสองปีแล้วอีกนิดเดียวเย้ มีเธมันดีที่สุด เย่!
+                </p>
+            </section>
+
+            <!-- Scrollable Timeline -->
+            <div id="timeline" class="timeline">
+                <!-- Moments will be injected here via JS to make it easier to manage -->
+            </div>
+
+            <div class="footer-msg anim-fade">
+                I love you most | Inseparable ∞
+            </div>
+        </main>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="Ed Sheeran - Photograph (Official Lyric Video).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
