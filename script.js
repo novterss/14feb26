@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizData = [
         {
             question: "1. วันครบรอบของเราที่เราตกลงกันคือวันที่เท่าไหร่",
-            options: ["08/07/20", "08/09/25", "02/11/06", "08/07/02"],
+            options: ["08/07/20", "08/09/24", "02/11/06", "08/07/02"],
             correct: 1
         },
         {
